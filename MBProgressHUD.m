@@ -599,7 +599,7 @@
 }
 
 - (void)setTransformForCurrentOrientation:(BOOL)animated {
-	UIDeviceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+	UIDeviceOrientation orientation = (UIDeviceOrientation)[UIApplication sharedApplication].statusBarOrientation;
 	NSInteger degrees = 0;
 	
 	if (UIInterfaceOrientationIsLandscape(orientation)) {
